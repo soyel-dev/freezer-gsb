@@ -1,0 +1,57 @@
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyCMIT5lu.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local('Raleway'), local('Raleway-Regular'), url(https://fonts.gstatic.com/s/raleway/v14/1Ptug8zYS_SKggPNyC0ITw.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+    --grey-50: #FAFAFA;
+    --theme-blue: #1976D2;
+    --theme-blue-light: #63A4FF;
+    --theme-blue-dark: #004BA0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif !important;
+    background-color: var(--grey-50) !important;
+}
+
+header {
+    background-color: var(--theme-blue) !important;
+    border-top: 7.5px solid var(--theme-blue-dark) !important;
+}
+
+header .nav-link {
+    text-decoration: none;
+    background: linear-gradient(to top, white 0%, white 10%, transparent 10.01%) no-repeat left bottom / 0 100%;
+    transition: background-size .5s;
+}
+
+header .nav-link:hover {
+    background-size: 100% 100%;
+}
+
+.jumbotron, .card-header, #first-home-banner {
+    text-align: center;
+}
+
+#first-home-banner i {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.navbar-toggler, .card, .btn, input, select, .alert, .jumbotron, textarea, .dropdown-menu, .input-group-text, .modal-content {
+    border-radius: 0 !important;
+}
